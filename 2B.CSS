@@ -1,0 +1,101 @@
+{
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.dropdown .dropbtn {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 8px;
+}
+
+.search-btn {
+  padding: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.top-menu {
+  background-color: #e8e8e8;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.top-menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  padding: 20px;
+  background-color: #dcdcdc;
+  margin: 0;
+}
+
+.report-container {
+  background-color: white;
+  padding: 20px;
+}
+
+.report-item {
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.report-title {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.report-dropdown {
+  margin-right: 10px;
+}
+
+.delete-btn {
+  cursor: pointer;
+}
+
+.actions {
+  text-align: center;
+  padding: 20px;
+}
+
+.action-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.green {
+  background-color: #4CAF50;
+}
+
+.blue {
+  background-color: #2196F3;
+}
+
+.red {
+  background-color: #f44336;
+}
