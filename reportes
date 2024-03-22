@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panel de Reportes</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            h1, h2 {
+                color: #3F3F3F;
+            }
+            .report {
+                border: 1px solid #ddd;
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            .image-container {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+   <body>
+    <header>
+        <h1>Reportes</h1>
+    </header>
+    <main>
+        <section id="reports">
+            <div class="report">
+                <h2>Site 1</h2>
+                <img src="site1.jpg" alt="Site 1 photo" class="photo">
+                <p><strong>Information:</strong> Information for Site 1</p>
+                <p><strong>Report:</strong> Report for Site 1</p>
+            </div>
+            <div class="report">
+                <h2>Site 2</h2>
+                <img src="site2.jpg" alt="Site 2 photo" class="photo">
+                <p><strong>Information:</strong> Information for Site 2</p>
+                <p><strong>Report:</strong> Report for Site 2</p>
+            </div>
+            <!-- Añadir mas reportes -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023. Site Reports</p>
+    </footer>
+</body>
+</html>
