@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panel de Reportes</title>
+        <link rel="stylesheet" href="css/3B.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+            .btn-eliminar {
+                background-color: #Ff0000;
+                color: white;
+                padding: 5px 10px;
+                border: none;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+                font-size: 14px;
+                margin: 2px 2px;
+                transition: 0.3s;
+            }
+
+            .btn-editar {
+                background-color: #4CAF50;
+                color: white;
+                padding: 5px 10px;
+                border: none;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+                font-size: 14px;
+                margin: 2px 2px;
+                transition: 0.3s;
+            }
+
+            .btn-editar:hover {
+                background-color: #0000ff;
+            }
+
+            .btn-eliminar:hover {
+                background-color: #0000ff;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between py-4">
+                <select class="border border-gray-300 rounded px-4 py-2">
+                    <option>Todo</option>
+                </select>
+                <div class="relative">
+                    <input type="search" class="border border-gray-300 rounded px-4 py-2" placeholder="Buscar por categoría o nombre...">
+                    <button class="absolute right-2 top-2 text-gray-600">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="flex space-x-4 mb-4">
+                <img src="https://placehold.co/100x40" alt="Development Company Logo Placeholder Image" class="h-10">
+                <div class="flex space-x-4">
+                    <!-- Botones para navegar entre las páginas -->
+                    <a href="#" class="text-blue-600 hover:text-blue-700">Administración</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-700">Perfil</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-700">Cerrar Sesión</a>
+                    <a href="index.html" class="text-blue-600 hover:text-blue-700">Inicio</a>
+                </div>
+            </div>
+            <h1>Administración de Reportes</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuario</th>
+                        <th>Reporte</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="reportes">
+                    <!-- Los reportes se agregarán aquí -->
+                </tbody>
+            </table>
+            <button id="btn-nuevo" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                    Nuevo Reporte
+            </button>
+            <script>
+                // Mock de datos
+                const reportes = [
+                    {id: 1, usuario: 'user1', reporte: 'Reporte 1'},
+                    {id: 2, usuario: 'user2', reporte: 'Reporte 2'},
+                    {id: 3, usuario: 'user3', reporte: 'Reporte 3'}];
+
+                // Función para renderizar los reportes
+                function renderizarReportes() {
+                    const tbody = document.getElementById('reportes');
+                    tbody.innerHTML = '';
+                    reportes.forEach(reporte => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td>${reporte.id}</td>
+                            <td>${reporte.usuario}</td>
+                            <td>${reporte.reporte}</td>
+                            <td>
+                                <button class="bg-green-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                                    Editar
+                                </button>
+                                <button class="bg-red-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                                    Eliminar
+                                </button>
+                            </td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                }
+
+                // Agregar evento al botón "Nuevo reporte"
+                const btnNuevo = document.getElementById('btn-nuevo');
+                btnNuevo.addEventListener('click', () => {
+                    // Lógica para crear un nuevo reporte
+                });
+
+                // Renderizar los reportes al cargar la página
+                renderizarReportes();
+            </script>
+    </body>
+</html>
