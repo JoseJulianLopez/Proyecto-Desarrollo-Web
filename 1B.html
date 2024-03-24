@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Interface</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header>
-  <div class="navbar">
-    <div class="dropdown">
-      <button class="dropbtn">Todo ▾</button>
-    </div>
-    <input type="text" placeholder="Buscar por categoría o nombre..." class="search-input">
-    <button class="search-btn">🔍</button>
-  </div>
-  <div class="top-menu">
-    <a href="#">Administracion</a>
-    <a href="#">Perfil</a>
-    <a href="#">Cerrar Sesion</a>
-  </div>
-</header>
-<main>
-  <h1>Sitios Disponibles</h1>
-  <div class="list-container">
-    <div class="list-item">CT0001</div>
-    <div class="list-item">CT0002</div>
-    <div class="list-item">CT0003</div>
-    <div class="list-item">CT0004</div>
-  </div>
-</main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sitios Disponibles</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="css/1B.css">
+        <link rel="stylesheet" href="css/3B.css">
+    </head>
+    <body class="bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between py-4">
+                <select class="border border-gray-300 rounded px-4 py-2">
+                    <option>Todo</option>
+                </select>
+                <div class="relative">
+                    <input type="search" class="border border-gray-300 rounded px-4 py-2" placeholder="Buscar por categoría o nombre...">
+                    <button class="absolute right-2 top-2 text-gray-600">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="flex space-x-4 mb-4">
+                <img src="https://placehold.co/100x40" alt="Development Company Logo Placeholder Image" class="h-10">
+                <div class="flex space-x-4">
+                    <!-- Botones para navegar entre las páginas -->
+                    <a href="#" class="text-blue-600 hover:text-blue-700">Administración</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-700">Perfil</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-700">Cerrar Sesión</a>
+                    <a href="index.html" class="text-blue-600 hover:text-blue-700">Inicio</a>
+                </div>
+            </div>
+            <main>
+                <div class="bg-white shadow rounded-lg p-4">
+                    <h2 class="text-xl font-semibold mb-4">Sitios Disponibles</h2>
+                    <div class="space-y-4">
+                        <div class="p-4 border border-gray-300 rounded">
+                            <p>CT0001</p>
+                        </div>
+                        <div class="p-4 border border-gray-300 rounded">
+                            <p>CT0002</p>
+                        </div>
+                        <div class="p-4 border border-gray-300 rounded">
+                            <p>CT0003</p>
+                        </div>
+                        <div class="p-4 border border-gray-300 rounded">
+                            <p>CT0004</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+    </body>
 </html>
