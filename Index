@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site Listing</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="css/1B.css" type="text/css"/>
+        <link rel="stylesheet" href="css/3B.css" type="text/css">
+
+
+        <style>
+        </style>
+    </head>
+    <body class="bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between py-4">
+                <select class="border border-gray-300 rounded px-4 py-2">
+                    <option>Todo</option>
+                </select>
+                <div class="relative">
+                    <input type="search" class="border border-gray-300 rounded px-4 py-2" placeholder="Buscar por categoría o nombre...">
+                    <button class="absolute right-2 top-2 text-gray-600">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="flex space-x-4 mb-4">
+                <img src="https://placehold.co/100x40" alt="Development Company Logo Placeholder Image" class="h-10">
+                <div class="flex space-x-4">
+                    <!-- Botones para navegar entre las páginas -->
+                    <a href="1B.html" class="text-blue-600 hover:text-blue-700">Ir a Sitios Disponibles</a>
+                    <a href="2.html" class="text-blue-600 hover:text-blue-700">Panel de Reportes</a>
+                    <a href="3.html" class="text-blue-600 hover:text-blue-700">Reporte de Averías</a>
+                    <a href="2B.html" class="text-blue-600 hover:text-blue-700">Interfaz de Administración</a>
+                    <a href="3B.html" class="text-blue-600 hover:text-blue-700">Gestión de Sitios y Usuarios</a>
+                    <a href="4B.html" class="text-blue-600 hover:text-blue-700">Panel de Reportes</a>
+                    <a href="5B.html" class="text-blue-600 hover:text-blue-700">Administración de Reportes de Usuarios</a>
+                    <a href="4.html" class="text-blue-600 hover:text-blue-700">Presentación de informes</a>
+                    
+                </div>
+            </div>
+            <div class="bg-white shadow rounded-lg p-4">
+                <h2 class="text-xl font-semibold mb-4">Menu Principal</h2>
+                <div class="space-y-4">
+                    <div class="p-4 border border-gray-300 rounded">
+                        <p>CT0001</p>
+                    </div>
+                    <div class="p-4 border border-gray-300 rounded">
+                        <p>CT0002</p>
+                    </div>
+                    <div class="p-4 border border-gray-300 rounded">
+                        <p>CT0003</p>
+                    </div>
+                    <div class="p-4 border border-gray-300 rounded">
+                        <p>CT0004</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
